@@ -1,0 +1,77 @@
+{
+	"entity_examples": [{
+			"text": "Can I make a payment from credit account 456 today",
+			"entities": [{
+					"start": 26,
+					"end": 32,
+					"value": "credit",
+					"entity": "acc_type"
+				},
+				{
+					"start": 45,
+					"end": 50,
+					"value": "today",
+					"entity": "when"
+				}
+
+			]
+		},
+		{
+			"text": "payment from credit account 12348 tommorow ?",
+			"entities": [{
+					"start": 13,
+					"end": 19,
+					"value": "credit",
+					"entity": "acc_type"
+				},
+				{
+					"start": 34,
+					"end": 42,
+					"value": "tommorow",
+					"entity": "when"
+				}
+
+			]
+		},
+		{
+			"text": "Can I make a payment from debit account 2345568 with preformat codePreformat1CITI234 today ?",
+			"intent": "Initiate_payment_preformat",
+			"entities": [{
+					"start": 26,
+					"end": 31,
+					"value": "debit",
+					"entity": "acc_type"
+				},
+				{
+					"start": 85,
+					"end": 90,
+					"value": "today",
+					"entity": "when"
+				}
+			]
+		},
+		{
+			"text": "Initiate a payment to ABC Holdings for amount 4563 EUR for today.",
+			"intent": "make_payment",
+			"entities": [{
+					"start": 22,
+					"end": 25,
+					"value": "ABC",
+					"entity": "whom"
+				},
+				{
+					"start": 46,
+					"end": 54,
+					"value": "4563 EUR",
+					"entity": "amount"
+				},
+				{
+					"start": 59,
+					"end": 64,
+					"value": "today",
+					"entity": "when"
+				}
+			]
+		}
+	]
+}
